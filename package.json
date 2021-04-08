@@ -2,6 +2,7 @@
 	"name": "filewsl2win",
 	"displayName": "FileWSL2Win",
 	"description": "Easily copy files or directoriies from WSL to Windows side.",
+	"publisher": "karintou",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.55.0"
@@ -10,16 +11,28 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:filewsl2win.helloWorld"
+		"onCommand:filewsl2win.copyWSL2Win",
+		"onCommand:filewsl2win.setWinPath"
 	],
 	"main": "./dist/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "filewsl2win.helloWorld",
-				"title": "Hello World"
+				"command": "filewsl2win.copyWSL2Win",
+				"title": "Copy File To Windows"
+			},
+			{
+				"command": "filewsl2win.setWinPath",
+				"title": "Set Windows Path"
 			}
-		]
+		],
+		"menus": {
+            "explorer/context": [{
+                "when": "filesExplorerFocus",
+                "command": "filewsl2win.copyWSL2Win",
+                "group": "filewsl2win@1"
+            }]
+        }
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run package",
