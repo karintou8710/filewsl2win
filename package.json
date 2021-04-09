@@ -3,7 +3,7 @@
 	"displayName": "FileWSL2Win",
 	"description": "Easily copy files or directoriies from WSL to Windows side.",
 	"publisher": "karintou",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.55.0"
 	},

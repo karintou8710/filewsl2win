@@ -6,11 +6,13 @@ When you want to move a wsl file to windows, you can do it easily from the conte
 
 ## Extension Settings
 
-ctrl + shift + p -> Set Windows Path
+If you want to register or change widnwos path(SavePath), make the following settings.
 
-right click file or directry in explorlor
+"ctrl + shift + p" -> Select "Set Windows Path"
 
 ## How To Use
+
+Right click File in explorlor and select "Copy File To Windows"
 
 ### 1.0.0
 
